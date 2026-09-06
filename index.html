@@ -82,13 +82,13 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
       <p><strong>Phone</strong><br><a href="tel:+16787931302">678-793-1302</a></p>
       <p><strong>Email</strong><br><a href="mailto:david@rocketmail.com">david@rocketmail.com</a></p>
     </div>
-    <form id="contact-form" name="ironclad-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnpqbkpe" method="POST">
+    <form name="ironclad-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnpqbkpe" method="POST">
       <input type="hidden" name="subject" value="New Ironclad Services Group Website Request">
       <div class="row"><div class="field"><label for="name">Name</label><input id="name" name="name" required></div><div class="field"><label for="company">Company (if applicable)</label><input id="company" name="company"></div></div>
       <div class="row"><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div><div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel"></div></div>
       <div class="field"><label for="type">What can we help with?</label><select id="type" name="service"><option>Business / MSP</option><option>Data Center / Infrastructure</option><option>Network / Wi-Fi</option><option>Residential Technology</option><option>Senior / Family Technology Assistance</option><option>Other</option></select></div>
       <div class="field"><label for="message">Tell us about the project or problem</label><textarea id="message" name="message" required></textarea></div>
-      <button id="submitButton" class="btn primary" type="submit">Send Request</button>
+      <button class="btn primary" type="submit">Send Request</button>
     </form>
   </div>
 </div></section>
@@ -97,11 +97,5 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 <footer><div class="wrap foot"><div>© 2026 Ironclad Services Group LLC. All rights reserved.</div><div>Professional IT Services & Support</div></div></footer>
 
 
-<script>
-document.getElementById('contact-form').addEventListener('submit', function () {
-  var button = document.getElementById('submitButton');
-  button.disabled = true;
-  button.textContent = 'Sending...';
-});
-</script></body>
+</body>
 </html>
